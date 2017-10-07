@@ -30,6 +30,8 @@ extension ARSCNView {
         
         var featureHitTestPosition: SCNVector3?
         var highQualityFeatureHitTestResult = false
+        
+        //根据 currentFrame 的 rawFeaturePoints, 去获取点击位置附近最近的这个点来确定位置
         let highQualityfeatureHitTestResults = self.hitTestWithFeatures(position, coneOpeningAngleInDegrees: 18, minDistance: 0.5, maxDistance: 4.0)
         if !highQualityfeatureHitTestResults.isEmpty {
             let result = highQualityfeatureHitTestResults[0]
@@ -57,6 +59,7 @@ extension ARSCNView {
 //            return (SCNVector3(result.position), nil, false)
 //        }
         
+        //上述都得不到, 返回 feature point
         let finalHitTestResults = self.hitTest(position, types: .featurePoint)
         if let result = finalHitTestResults.first {
             let finalHitTestPosition = SCNVector3.positionFromTransform(result.worldTransform)

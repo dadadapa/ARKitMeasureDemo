@@ -16,27 +16,18 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-<<<<<<< HEAD
-xcuserdata
 
-## Other
-*.xccheckout
-*.moved-aside
-*.xcuserstate
-=======
 xcuserdata/
 
 ## Other
 *.moved-aside
 *.xccheckout
->>>>>>> de0169bd9be12e6a336863c8ce573e8523eac8d8
 *.xcscmblueprint
 
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
-<<<<<<< HEAD
-=======
+
 *.dSYM.zip
 *.dSYM
 
@@ -50,21 +41,15 @@ playground.xcworkspace
 # Packages/
 # Package.pins
 .build/
->>>>>>> de0169bd9be12e6a336863c8ce573e8523eac8d8
 
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
-<<<<<<< HEAD
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-#
-Pods/
-=======
+
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
->>>>>>> de0169bd9be12e6a336863c8ce573e8523eac8d8
 
 # Carthage
 #
@@ -73,8 +58,7 @@ Pods/
 
 Carthage/Build
 
-<<<<<<< HEAD
-=======
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -86,4 +70,5 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
->>>>>>> de0169bd9be12e6a336863c8ce573e8523eac8d8
+
+.DS_Store
