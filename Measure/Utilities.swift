@@ -214,3 +214,4 @@ func rayIntersectionWithHorizontalPlane(rayOrigin: float3, direction: float3, pl
 	// Return the intersection point.
 	return rayOrigin + (direction * dist)
 }
+

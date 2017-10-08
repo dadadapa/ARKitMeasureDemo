@@ -53,6 +53,7 @@ extension ARSCNView {
         }
         
         // Do not intersect with planes above the camera or if the ray is almost parallel to the plane.
+        //射线向上 或者 平行于 平面, 不采用
         if ray.direction.y > -0.03 {
             return nil
         }

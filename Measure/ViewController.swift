@@ -122,6 +122,7 @@ extension ViewController {
     fileprivate func setupScene() {
         targetImageView.isHidden = true
         sceneView.delegate = self
+        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         sceneView.session = session
         loadingView.startAnimating()
         meterImageView.isHidden = true
@@ -140,7 +141,9 @@ extension ViewController {
     }
     
     fileprivate func detectObjects() {
-        guard let worldPosition = sceneView.realWorldVector(screenPosition: view.center) else { return }
+        guard let worldPosition = sceneView.realWorldVector(screenPosition: view.center) else {
+            return
+        }
         targetImageView.isHidden = false
         meterImageView.isHidden = false
         if lines.isEmpty {
